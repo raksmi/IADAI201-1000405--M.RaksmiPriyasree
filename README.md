@@ -4,8 +4,6 @@
 
 ParkVision AI is a computer-vision system built for **UrbanFlow AI Pvt. Ltd.** that analyses parking-lot images, detects individual parking slots, classifies each as **occupied** or **empty**, and converts those detections into real-time parking-availability insights and recommendations.
 
-**Live app:** `<PASTE YOUR STREAMLIT CLOUD LINK HERE>`
-**GitHub repo:** `<PASTE YOUR GITHUB REPO LINK HERE>`
 
 ---
 
@@ -85,7 +83,6 @@ Reports on the held-out **test** split and saves the numbers to `evaluation_resu
 | Precision | `<FILL IN>` |
 | Recall | `<FILL IN>` |
 
-*(Add a short paragraph here once you have the numbers: how the model performed, which errors were common — e.g. missed detections in heavy shadow, false positives on partially-visible cars — and what you tried to improve it, e.g. more data, fixed labels, tuned confidence threshold.)*
 
 ### Testing
 
@@ -135,25 +132,10 @@ The dashboard lets a user upload a parking-lot image and shows, side by side:
 - Total / occupied / available slot counts and occupancy %
 - A congestion badge and a recommendation
 
-*(Add 2–3 screenshots of the running app here once deployed, e.g.)*
-
-```
-![Upload screen](screenshots/upload.png)
-![Annotated result + insights](screenshots/results.png)
-```
 
 ---
 
-## 6. Deployment
-
-1. Push this repository to GitHub (see below).
-2. Go to [streamlit.io/cloud](https://streamlit.io/cloud), sign in with GitHub, select this repo, set the main file to `app.py`.
-3. Streamlit Cloud installs `requirements.txt` and builds the app; note the trained weights (`runs/parkvision_yolo26s/weights/best.pt`) must be committed (or fetched at startup) for the app to load a model on the cloud.
-4. Test the deployed public link with a fresh image before submitting.
-
----
-
-## 7. Project Structure
+## 6. Project Structure
 
 ```text
 ParkVision_AI/
@@ -186,16 +168,3 @@ ParkVision_AI/
 - Streamlit Official Documentation
 - OpenCV Official Documentation
 
-*(These are the reference materials provided in the assignment brief. Add the specific paper titles/links you actually read and cite anything else you used, e.g. dataset card, Roboflow project page.)*
-
----
-
-## Submission checklist
-
-- [ ] GitHub repo access given to `ai.assignments@wacpinternational.org`
-- [ ] Code (.py) uploaded
-- [ ] Dataset uploaded (or a representative subset + a note on where to get the rest, if the full dataset is too large for GitHub)
-- [ ] Trained model weights uploaded or reproducible via `train.py`
-- [ ] Live Streamlit Cloud link works
-- [ ] README has findings, references, data-prep description, model details, metrics, and screenshots
-- [ ] Submission PDF includes GitHub link, name, registration number, CRS name, course name, school name

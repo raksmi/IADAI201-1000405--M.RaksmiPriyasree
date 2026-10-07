@@ -514,62 +514,8 @@ PARK_VISION_SA/
 | `requirements.txt` | Python dependencies |
 | `README.md` | Project documentation |
 
-If the assessment repository requires the dataset itself to be included, a `dataset/` directory can also be added separately according to the submission requirements.
-
 ---
 
-# 📦 Installation & Local Run
-
-## 1. Clone the repository
-
-```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd PARK_VISION_SA
-```
-
-## 2. Create a virtual environment
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### macOS / Linux
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-## 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Recommended deployment requirements:
-
-```text
-ultralytics-opencv-headless==8.4.143
-streamlit
-pandas
-numpy
-Pillow
-plotly
-streamlit-webrtc
-av
-streamlit-autorefresh
-```
-
-## 4. Run the application
-
-```bash
-streamlit run app.py
-```
-
----
 
 # ☁️ Deployment
 
@@ -583,40 +529,6 @@ The deployment uses the trained `best.pt` model stored with the application.
 
 ---
 
-# 📋 Final Project Results
-
-ParkVision AI combines:
-
-```text
-Computer Vision
-       +
-YOLO Object Detection
-       +
-Parking Logic
-       +
-Analytics
-       +
-Streamlit
-       =
-Intelligent Parking Application
-```
-
-The final system can:
-
-- Detect parking spaces.
-- Identify empty and occupied spaces.
-- Calculate parking availability.
-- Calculate occupancy percentage.
-- Determine congestion level.
-- Generate parking recommendations.
-- Analyse uploaded parking images.
-- Monitor parking through a live camera.
-- Visualise parking analytics.
-- Maintain detection history.
-- Provide optional sound feedback.
-- Run as a publicly accessible Streamlit application.
-
----
 
 # 📚 References
 
@@ -641,13 +553,9 @@ The project was informed by research and technical documentation related to park
 
 👉 **https://parkvision1234.streamlit.app**
 
-### GitHub
-
-👉 **Add your GitHub repository link here**
 
 ---
 
-## 💡 Project Vision
 
 > **Smarter parking. Better decisions. More efficient cities.**
 
